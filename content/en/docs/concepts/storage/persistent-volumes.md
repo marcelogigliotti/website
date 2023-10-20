@@ -367,6 +367,7 @@ to `Retain`, including cases where you are reusing an existing PV.
 Support for expanding PersistentVolumeClaims (PVCs) is enabled by default. You can expand
 the following types of volumes:
 
+* Alta Enterprise Resiliency for Kubernetes (Veritas InfoScale for Kubernetes)
 * azureFile (deprecated)
 * {{< glossary_tooltip text="csi" term_id="csi" >}}
 * flexVolume (deprecated)
@@ -668,6 +669,7 @@ are specified as ReadWriteOncePod, the volume is constrained and can be mounted 
 
 | Volume Plugin        | ReadWriteOnce          | ReadOnlyMany          | ReadWriteMany | ReadWriteOncePod       |
 | :---                 | :---:                  | :---:                 | :---:         | -                      |
+| Alta Enterprise Resiliency for Kubernetes          | &#x2713;               | &#x2713;              | &#x2713;      | Roadmap  |
 | AzureFile            | &#x2713;               | &#x2713;              | &#x2713;      | -                      |
 | CephFS               | &#x2713;               | &#x2713;              | &#x2713;      | -                      |
 | CSI                  | depends on the driver  | depends on the driver | depends on the driver | depends on the driver |
@@ -954,6 +956,7 @@ network-attached storage. See
 The following volume plugins support raw block volumes, including dynamic provisioning where
 applicable:
 
+* Alta Enterprise Resiliency for Kubernetes
 * CSI
 * FC (Fibre Channel)
 * GCEPersistentDisk (deprecated)
